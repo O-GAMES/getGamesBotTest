@@ -9,13 +9,15 @@ bot.start((ctx) => ctx.reply('Welcome'));
 // bot.on(message('sticker'), (ctx) => ctx.reply('👍'));
 // bot.hears('hi', (ctx) => ctx.reply('Hey there'));
 // , {source: "../1.png"} 
+
 bot.command('gg', ctx =>{
 
 
 bot.telegram.sendPhoto(ctx.chat.id, {source: "src/Screenshot from 2023-02-28 17-15-30.png"});
 
 })
-// bot.launch();
+
+bot.launch();
 // Enable graceful stopd 
-// process.once('SIGINT', () => bot.stop('SIGINT'));
-// process.once('SIGTERM', () => bot.stop('SIGTERM'));
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
