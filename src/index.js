@@ -17,5 +17,5 @@ bot.telegram.sendPhoto(ctx.chat.id, {source: "src/Screenshot from 2023-02-28 17-
 })
 bot.launch();
 // Enable graceful stop
-process.once('SIGINT', () => bot.stop('SIGINT'));
-process.once('SIGTERM', () => bot.stop('SIGTERM'));
+// process.once('SIGINT', () => bot.stop('SIGINT'));
+// process.once('SIGTERM', () => bot.stop('SIGTERM'));
