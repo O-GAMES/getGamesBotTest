@@ -10,6 +10,7 @@
   "author": "amr",
   "license": "ISC",
   "dependencies": {
+    "epic-free-games": "^4.0.1",
     "telegraf": "^4.12.2"
   }
 }
